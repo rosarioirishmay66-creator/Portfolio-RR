@@ -247,4 +247,21 @@ body{background-image:radial-gradient(ellipse at 2% 12%,rgba(185,243,107,.12),tr
     display: block;
     border-radius: 16px;
 }
+@keyframes softPinkFloat {
+  0%, 100% {
+    transform: translateY(0);
+    box-shadow: 0 0 0 rgba(255, 182, 206, 0);
+  }
+  50% {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(255, 182, 206, 0.22);
+  }
+}
 
+.button.primary,
+.nav-cta,
+.certificate-card,
+.project-card,
+.skill-card {
+  animation: softPinkFloat 4s ease-in-out infinite;
+}
