@@ -206,3 +206,45 @@ body{background-image:radial-gradient(ellipse at 2% 12%,rgba(185,243,107,.12),tr
   .project-portal-showcase .portal-showcase-image img,
   .project-portal-showcase .portal-feature-list span { transition: none !important; }
 }
+
+.mock-interview-section {
+    padding: 60px 20px;
+    background-color: #faf6f8; /* Soft pinkish/neutral background */
+    text-align: center;
+    font-family: 'Poppins', sans-serif, system-ui;
+}
+
+.mock-interview-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #4a3b4c;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: #7a6b7d;
+    margin-bottom: 30px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(180, 140, 160, 0.15);
+    background: #000;
+}
+
+.interview-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
