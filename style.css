@@ -55,46 +55,7 @@ body{background-image:radial-gradient(ellipse at 2% 12%,rgba(185,243,107,.12),tr
 @media(max-width:700px){.resume-heading{padding:30px 22px;align-items:flex-start}.resume-photo-frame{flex-basis:96px;width:96px;height:118px}.resume-contact{flex-direction:column;gap:5px}.resume-body{grid-template-columns:1fr;padding:26px 22px}.resume-main-column{padding-right:0}.resume-side-column{padding-left:0;border-left:0;border-top:1px solid #e4eae2;padding-top:23px}.resume-footer{padding:13px 22px;flex-direction:column;gap:5px}.resume-item-top strong{line-height:1.5}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
-.mock-interview-section {
-    padding: 60px 20px;
-    background-color: #faf6f8; /* Soft pinkish/neutral background */
-    text-align: center;
-    font-family: 'Poppins', sans-serif, system-ui;
-}
 
-.mock-interview-section .container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.section-title {
-    font-size: 2rem;
-    color: #4a3b4c;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.section-subtitle {
-    font-size: 1rem;
-    color: #7a6b7d;
-    margin-bottom: 30px;
-}
-
-.video-container {
-    position: relative;
-    width: 100%;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(180, 140, 160, 0.15);
-    background: #000;
-}
-
-.interview-video {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 16px;
-}
 
 /* Student portal project showcase additions */
 .project-portal-showcase { overflow: hidden; }
