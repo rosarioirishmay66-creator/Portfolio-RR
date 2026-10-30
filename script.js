@@ -75,3 +75,10 @@ function downloadResume() {
 }
 </script>
 
+// Existing JavaScript code mo
+// ...
+
+// DOWNLOAD RESUME AS PDF
+function downloadResume() {
+    window.print();
+}
