@@ -68,3 +68,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+<script>
+function downloadResume() {
+    window.print();
+}
+</script>
+
