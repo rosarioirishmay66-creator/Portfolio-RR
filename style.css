@@ -142,3 +142,93 @@ background:
     radial-gradient(circle at 90% 90%, rgba(255,225,239,.5), transparent 25%);
 
 animation: pinkMove 18s ease-in-out infinite alternate;
+
+/* =================================
+   LIVE FLOATING HEARTS BACKGROUND
+================================= */
+
+.floating-hearts {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.floating-heart {
+    position: absolute;
+    bottom: -50px;
+    color: #f4a9cb;
+    opacity: 0;
+    animation: floatHeart linear infinite;
+    filter: drop-shadow(0 0 8px rgba(244, 169, 203, .5));
+    user-select: none;
+}
+
+@keyframes floatHeart {
+    0% {
+        transform: translateY(0) rotate(0deg) scale(.7);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: .65;
+    }
+
+    50% {
+        transform: translateY(-50vh) rotate(25deg) scale(1);
+        opacity: .5;
+    }
+
+    85% {
+        opacity: .4;
+    }
+
+    100% {
+        transform: translateY(-115vh) rotate(-25deg) scale(.8);
+        opacity: 0;
+    }
+}
+
+/* Keep content above the hearts */
+
+.site-header,
+main,
+footer {
+    position: relative;
+    z-index: 2;
+}
+
+/* Soft pink glow */
+
+.floating-heart:nth-child(3n) {
+    color: #ffb6d5;
+    filter: drop-shadow(0 0 12px #ffc6df);
+}
+
+.floating-heart:nth-child(3n + 1) {
+    color: #e99abb;
+}
+
+.floating-heart:nth-child(3n + 2) {
+    color: #f8d1e2;
+}
+
+/* Mobile friendly */
+
+@media (max-width: 650px) {
+    .floating-heart {
+        font-size: 14px !important;
+    }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+    .floating-heart {
+        animation: none;
+        display: none;
+    }
+}
