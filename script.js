@@ -82,3 +82,32 @@ function downloadResume() {
 function downloadResume() {
     window.print();
 }
+// LIVE FLOATING HEARTS
+const heartContainer = document.querySelector('.floating-hearts');
+
+const heartSymbols = ['♥', '♡', '💕', '💗'];
+
+function createHeart() {
+    if (!heartContainer) return;
+
+    const heart = document.createElement('span');
+    heart.classList.add('floating-heart');
+
+    heart.textContent = heartSymbols[
+        Math.floor(Math.random() * heartSymbols.length)
+    ];
+
+    heart.style.left = Math.random() * 100 + '%';
+    heart.style.fontSize = (Math.random() * 18 + 12) + 'px';
+    heart.style.animationDuration = (Math.random() * 8 + 8) + 's';
+
+    heartContainer.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 18000);
+}
+
+setInterval(createHeart, 650);
+
+for (let i = 0; i < 15; i++) {
+    setTimeout(createHeart, i * 250);
+}
