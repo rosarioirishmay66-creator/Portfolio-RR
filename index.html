@@ -7,128 +7,6 @@
   <title>Irish Rosario | BSIT Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .hero-art.profile-art { display:flex; align-items:flex-end; justify-content:center; overflow:hidden; }
-    .hero-art.profile-art .code-card { display:none; }
-    .hero-art.profile-art .profile-photo { position:relative; z-index:1; display:block; width:100%; height:100%; max-height:570px; object-fit:contain; object-position:center bottom; filter:drop-shadow(0 24px 30px rgba(20,35,28,.2)); }
-    .hero-art.profile-art .tag-bottom { z-index:2; }
-    @media print {
-      body * { visibility:hidden !important; }
-      #resume, #resume * { visibility:visible !important; }
-      #resume { position:absolute; left:0; top:0; width:100%; padding:0 !important; background:white !important; }
-      #resume > .container > .eyebrow, #resume > .container > h2, #resume > .container > .section-intro, .resume-actions, .resume-help { display:none !important; }
-      .resume-document { border:0 !important; box-shadow:none !important; border-radius:0 !important; }
-      .resume-heading, .resume-body { padding:18px 22px !important; }
-      .resume-photo-frame { width:112px !important; height:132px !important; }
-      .resume-block { break-inside:avoid; }
-      @page { size:A4; margin:10mm; }
-    }
-
-    :root {
-      --soft-pink: #fff7fb;
-      --pink-1: #f9eaf2;
-      --pink-2: #f4d7e7;
-      --pink-3: #e7b8cf;
-      --pink-4: #b77792;
-      --pink-5: #734c61;
-      --pink-border: rgba(150, 112, 132, 0.16);
-      --pink-shadow: rgba(151, 117, 136, 0.14);
-    }
-
-    body {
-      background: radial-gradient(circle at top left, rgba(244, 215, 231, 0.34), transparent 26%),
-                  radial-gradient(circle at bottom right, rgba(189, 137, 167, 0.1), transparent 28%),
-                  var(--soft-pink);
-    }
-
-    .site-header {
-      background: rgba(255, 250, 253, 0.88);
-      border-bottom: 1px solid var(--pink-border);
-      box-shadow: 0 8px 22px rgba(115, 76, 97, 0.03);
-    }
-
-    .brand,
-    .brand span,
-    .nav-links a:hover,
-    .nav-links a:focus-visible,
-    .nav-cta,
-    .eyebrow,
-    .section h2 span,
-    .hero-copy h1 span,
-    .profile-badges span,
-    .project-type,
-    .resume-kicker,
-    .resume-identity h3 span,
-    .resume-footer,
-    .project-portal-showcase .project-type,
-    .project-portal-showcase .portal-actions .primary {
-      color: var(--pink-5);
-    }
-
-    .nav-cta,
-    .button.primary,
-    .btn.primary,
-    .project-portal-showcase .portal-actions .primary {
-      background: linear-gradient(135deg, var(--pink-2), var(--pink-1));
-      border: 1px solid rgba(153, 104, 126, 0.14);
-      box-shadow: 0 12px 26px var(--pink-shadow);
-    }
-
-    .button.secondary,
-    .btn.secondary {
-      border: 1px solid var(--pink-border);
-      background: rgba(255,255,255,0.7);
-      color: var(--pink-5);
-    }
-
-    .section h2 span,
-    .project-portal-showcase .project-type,
-    .resume-kicker,
-    .resume-identity h3 span {
-      background: linear-gradient(100deg, var(--pink-4), var(--pink-3));
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .resume-document:before {
-      background: linear-gradient(90deg, #dba9c0, #f6dfe9, #f2cadb, #dca9c3);
-    }
-
-    .resume-photo-frame {
-      background: linear-gradient(145deg, #f4d4e4, #f9edf3);
-      box-shadow: 0 12px 28px rgba(115, 76, 97, 0.12);
-    }
-
-    .certificate-card:hover,
-    .certificate-card:focus-visible {
-      border-color: rgba(172, 111, 144, 0.46);
-      box-shadow: 0 18px 38px rgba(151, 117, 136, 0.12);
-    }
-
-    .certificate-card .certificate-title {
-      color: var(--pink-5);
-    }
-
-    .certificate-card .certificate-org {
-      color: #7b5c6b;
-    }
-
-    .certificate-lightbox .lightbox-close {
-      background: rgba(255,255,255,0.15);
-      border-color: rgba(255,255,255,0.3);
-    }
-
-    .project-portal-showcase .portal-feature-list span,
-    .project-portal-showcase .portal-actions .secondary {
-      border-color: rgba(160, 118, 139, 0.2);
-      background: rgba(255,255,255,0.08);
-    }
-
-    .project-portal-showcase .portal-actions .secondary {
-      color: var(--pink-5);
-    }
-  </style>
 </head>
 <body>
   <header class="site-header">
@@ -136,8 +14,13 @@
       <a class="brand" href="#home">IMR<span>.</span></a>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
       <div class="nav-links" id="navLinks">
-        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a></a><a href="#mock-interview">Mock Interview</a>
-        <a href="#problem-solving">Problem-Solving</a><a href="#resume">Resume</a><a href="#contact" class="nav-cta">Contact</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#mock-interview">Mock Interview</a>
+        <a href="#problem-solving">Problem-Solving</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact" class="nav-cta">Contact</a>
       </div>
     </nav>
   </header>
@@ -156,8 +39,10 @@
           </div>
           <div class="hero-meta"><span>📍 Philippines</span><span>🎓 Datamex College of Saint Adeline</span></div>
         </div>
-        <div class="hero-art profile-art" aria-label="Photo of Welfredo Samong Sumcad">
-          <div class="orb orb-one"></div><div class="orb orb-two"></div>
+
+        <div class="hero-art profile-art" aria-label="Photo of Irish May Rosario">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
           <img src="image.png" alt="Irish May Rosario" class="profile-photo">
           <div class="floating-tag tag-bottom">✦ Always learning</div>
         </div>
@@ -172,50 +57,75 @@
       </div>
     </section>
 
-    <section class="section" idp="about">
+    <section class="section" id="about">
       <div class="container two-col">
-        <div><p class="eyebrow">01 / ABOUT ME</p><h2>Learning today.<br><span>Building for tomorrow.</span></h2></div>
+        <div>
+          <p class="eyebrow">01 / ABOUT ME</p>
+          <h2>Learning today.<br><span>Building for tomorrow.</span></h2>
+        </div>
         <div class="prose">
-          <p>I am a Bachelor of Science in Information Technology student at Datamex College of Saint Adeline. I am developing my skills in web development, database management, system analysis, and practical application design.</p>
-          <p>I have explored website development using HTML, CSS, PHP, and MySQL, as well as system concepts such as a student portal and a salon booking and service management system. I have also worked on simple data tools and reporting concepts.</p>
-          <p>My goal is to grow into a dependable IT professional who creates useful, understandable, and reliable solutions. I value continuous learning, teamwork, honesty, and being willing to improve.</p>
-          <div class="value-tags"><span>Problem-solving</span><span>Teamwork</span><span>Continuous learning</span></div>
+          <p>I am a Bachelor of Science in Information Technology student at Datamex College of Saint Adeline. I am developing my skills in web development, database management, system analysis, and practical problem solving.</p>
+          <p>I have explored website development using HTML, CSS, PHP, and MySQL, as well as system concepts such as a student portal and a salon booking and service management system. I have also developed an understanding of business reporting and data organization.</p>
+          <p>My goal is to grow into a dependable IT professional who creates useful, understandable, and reliable solutions. I value continuous learning, teamwork, honesty, and being willing to improve from feedback.</p>
+          <div class="value-tags">
+            <span>Problem-solving</span>
+            <span>Teamwork</span>
+            <span>Continuous learning</span>
+          </div>
         </div>
       </div>
     </section>
 
-
     <section class="section section-muted" id="skills">
       <div class="container">
-        <p class="eyebrow">02 / TECHNICAL SKILLS</p><h2>My current <span>toolkit.</span></h2>
+        <p class="eyebrow">02 / TECHNICAL SKILLS</p>
+        <h2>My current <span>toolkit.</span></h2>
         <p class="section-intro">These are learning areas to keep developing. Skill levels should be updated to match what I can confidently demonstrate.</p>
         <div class="skills-grid">
-          <article class="skill-card"><div class="skill-icon">⌘</div><h3>Web Development</h3><p>HTML · CSS · JavaScript basics · Responsive layouts</p><div class="skill-level"><span style="width:76%"></span></div></article>
-          <article class="skill-card"><div class="skill-icon">⌁</div><h3>Backend Development</h3><p>PHP basics · Form handling · Application logic</p><div class="skill-level"><span style="width:58%"></span></div></article>
-          <article class="skill-card"><div class="skill-icon">▤</div><h3>Database</h3><p>MySQL · SQL basics · Database design concepts</p><div class="skill-level"><span style="width:42%"></span></div></article>
-          <article class="skill-card"><div class="skill-icon">▦</div><h3>Data Analysis</h3><p>Excel formulas · Tables · Charts · Sales reporting</p><div class="skill-level"><span style="width:64%"></span></div></article>
-          <article class="skill-card"><div class="skill-icon">⌘</div><h3>Tools & Hosting</h3><p>VS Code · XAMPP · Basic website deployment</p><div class="skill-level"><span style="width:38%"></span></div></article>
-          <article class="skill-card"><div class="skill-icon">⛨</div><h3>IT Fundamentals</h3><p>Basic troubleshooting · Cybersecurity awareness · AI literacy</p><div class="skill-level"><span style="width:70%"></span></div></article>
+          <article class="skill-card"><div class="skill-icon">⌘</div><h3>Web Development</h3><p>HTML · CSS · JavaScript basics · Responsive layouts</p><div class="skill-level"><span style="width:78%"></span></div></article>
+          <article class="skill-card"><div class="skill-icon">⌁</div><h3>Backend Development</h3><p>PHP basics · Form handling · Application logic</p><div class="skill-level"><span style="width:60%"></span></div></article>
+          <article class="skill-card"><div class="skill-icon">▤</div><h3>Database</h3><p>MySQL · SQL basics · Database design concepts</p><div class="skill-level"><span style="width:58%"></span></div></article>
+          <article class="skill-card"><div class="skill-icon">▦</div><h3>Data Analysis</h3><p>Excel formulas · Tables · Charts · Sales reporting</p><div class="skill-level"><span style="width:66%"></span></div></article>
+          <article class="skill-card"><div class="skill-icon">⌘</div><h3>Tools & Hosting</h3><p>VS Code · XAMPP · Basic website deployment</p><div class="skill-level"><span style="width:52%"></span></div></article>
+          <article class="skill-card"><div class="skill-icon">⛨</div><h3>IT Fundamentals</h3><p>Basic troubleshooting · Cybersecurity awareness · AI literacy</p><div class="skill-level"><span style="width:72%"></span></div></article>
         </div>
       </div>
     </section>
 
     <section class="section" id="projects">
       <div class="container">
-        <p class="eyebrow">03 / SELECTED WORK</p><h2>Projects & <span>practice.</span></h2>
+        <p class="eyebrow">03 / SELECTED WORK</p>
+        <h2>Projects & <span>practice.</span></h2>
         <p class="section-intro">Academic projects and practice work. Confirm each project's status and add screenshots, source-code links, and demos before presenting it as completed.</p>
         <div class="projects-grid">
           <article class="project-card project-featured project-portal-showcase">
-            <a class="portal-showcase-image" href="https://welfredo.github.io/DCSA-STUDENT-PORTAL/" target="_blank" rel="noopener" aria-label="Open the live Datamex student portal"><img src="student-portal-preview.png" alt="Datamex Student Portal preview"></a>
-            <div class="project-content"><div class="project-type">01 · WEB / APPLICATION</div><h3>Datamex Student Portal</h3><p>A web-based portal for Datamex College of Saint Adeline — a practical academic project designed to improve access to services and information.</p><div class="portal-feature-list"><span>Student access</span><span>Announcements</span><span>Event schedule</span><span>Responsive layout</span></div><div class="portal-actions"><a class="button primary" href="https://welfredo.github.io/DCSA-STUDENT-PORTAL/" target="_blank" rel="noopener">Live demo</a><a class="button secondary" href="#contact">Discuss</a></div><p class="project-status">Academic project prototype built as a front-end student portal concept.</p></div>
+            <a class="portal-showcase-image" href="https://welfredo.github.io/DCSA-STUDENT-PORTAL/" target="_blank" rel="noopener" aria-label="Open the live Datamex student portal"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Datamex student portal preview"></a>
+            <div class="project-content">
+              <div class="project-type">01 · WEB / APPLICATION</div>
+              <h3>Datamex Student Portal</h3>
+              <p>A web-based portal for Datamex College of Saint Adeline — a practice project focused on organized information access and student-centered interface design.</p>
+              <div class="portal-feature-list"><span>Student dashboard</span><span>Portal navigation</span><span>Announcements</span><span>Academic overview</span></div>
+              <div class="portal-actions"><a class="button primary" href="https://welfredo.github.io/DCSA-STUDENT-PORTAL/" target="_blank" rel="noopener">Live Demo</a><a class="button secondary" href="#contact">Discuss idea</a></div>
+              <p class="project-status">Project concept and frontend implementation · design prototype and practice demo.</p>
+            </div>
           </article>
+
           <article class="project-card">
-            <a class="portal-showcase-image project-demo-image project-visual visual-salon salon-demo-link" href="https://welfredo.github.io/Levy-Branzuela/" aria-label="Open Levy Branzuela salon management project"><img src="salon-preview.png" alt="Salon management system preview"></a>
-            <div class="project-content"><div class="project-type">02 · SYSTEM ANALYSIS</div><h3>Levy Branzuela Salon Management</h3><p>A booking and service management system concept designed to organize appointments and maintain service flow.</p><div class="tech-tags"><span>Booking system</span><span>UX planning</span><span>Service logic</span></div><div class="project-actions"><a class="button primary" href="https://welfredo.github.io/Levy-Branzuela/" target="_blank" rel="noopener">View project</a></div></div>
+            <a class="portal-showcase-image project-demo-image project-visual visual-salon salon-demo-link" href="https://welfredo.github.io/Levy-Branzuela/" aria-label="Open Levy Branzuela salon management system concept"><img src="https://images.unsplash.com/photo-1521590832167-7b5d0fba5e6d?auto=format&fit=crop&w=1200&q=80" alt="Salon management system concept"></a>
+            <div class="project-content">
+              <div class="project-type">02 · SYSTEM ANALYSIS</div>
+              <h3>Levy Branzuela Salon Management</h3>
+              <p>A booking and service management system concept designed to organize appointments, services, and client interactions.</p>
+            </div>
           </article>
+
           <article class="project-card">
-            <div class="project-visual visual-sales"><div class="chart-bars"><i style="height:35%"></i><i style="height:62%"></i><i style="height:48%"></i><i style="height:85%"></i><i style="height:74%"></i><i style="height:92%"></i></div></div>
-            <div class="project-content"><div class="project-type">03 · DATA / EXCEL</div><h3>Sweet Bites Sales Analysis</h3><p>A business reporting exercise organizing graham balls production, sales records, and product performance in a simple analytical format.</p><div class="tech-tags"><span>Excel</span><span>Reporting</span><span>Charts</span></div></div>
+            <div class="project-visual visual-sales"><div class="chart-bars"><i style="height:35%"></i><i style="height:62%"></i><i style="height:48%"></i><i style="height:85%"></i><i style="height:57%"></i></div></div>
+            <div class="project-content">
+              <div class="project-type">03 · DATA / EXCEL</div>
+              <h3>Sweet Bites Sales Analysis</h3>
+              <p>A business reporting exercise organizing graham balls production, sales, and inventory insights in a clear visual format.</p>
+            </div>
           </article>
         </div>
       </div>
@@ -223,21 +133,25 @@
 
     <section class="section section-dark" id="problem-solving">
       <div class="container">
-        <p class="eyebrow">04 / HOW I APPROACH PROBLEMS</p><h2>Think clearly.<br><span>Test step by step.</span></h2>
-        <p class="section-intro">Sample troubleshooting topics based on common development tasks. Replace these drafts with the actual problems, diagnostics, fixes, and lessons from your own experiences.</p>
+        <p class="eyebrow">04 / HOW I APPROACH PROBLEMS</p>
+        <h2>Think clearly.<br><span>Test step by step.</span></h2>
+        <p class="section-intro">Sample troubleshooting topics based on common development tasks. Replace these drafts with the actual problems, diagnostics, fixes, and lessons from your own experience.</p>
         <div class="cases">
-          <details><summary><span>01</span> Website cannot connect to database <b>＋</b></summary><div class="case-body"><p><strong>Possible causes:</strong> MySQL service is stopped or connectivity details are incorrect.</p><p><strong>Fix approach:</strong> Check the database credential, server status, and connection script.</p></div></details>
-          <details><summary><span>02</span> PHP page reports an undefined function <b>＋</b></summary><div class="case-body"><p><strong>Possible causes:</strong> Missing function definition, incorrect include file, or a typo in the function call.</p><p><strong>Fix approach:</strong> Confirm the function exists and the file is correctly included before the call.</p></div></details>
-          <details><summary><span>03</span> Website works locally but not on hosting <b>＋</b></summary><div class="case-body"><p><strong>Possible causes:</strong> File paths, case-sensitive filenames, or environment mismatch.</p><p><strong>Fix approach:</strong> Check relative paths, hosting restrictions, and basic deployment setup.</p></div></details>
-          <details><summary><span>04</span> User cannot log in <b>＋</b></summary><div class="case-body"><p><strong>Possible causes:</strong> Validation errors, incorrect credentials, or an auth flow issue.</p><p><strong>Fix approach:</strong> Validate the form input, confirm session handling, and review the login logic.</p></div></details>
-          <details><summary><span>05</span> Excel results do not look correct <b>＋</b></summary><div class="case-body"><p><strong>Possible causes:</strong> Incorrect formula ranges, duplicate data, or wrong filtering logic.</p><p><strong>Fix approach:</strong> Review the data source, formulas, and reference ranges before finalizing the report.</p></div></details>
+          <details><summary><span>01</span> Website cannot connect to database <b>＋</b></summary><div class="case-body"><p><strong>Possible causes:</strong> MySQL service is stopped or connection settings are incorrect.</p><p><strong>What I would check:</strong> Verify credentials, service status, host config, and whether the database exists.</p></div></details>
+          <details><summary><span>02</span> PHP page reports an undefined function <b>＋</b></summary><div class="case-body"><p><strong>Possible causes:</strong> Missing function definition, include path issues, or a naming mismatch.</p><p><strong>What I would check:</strong> Confirm the file is included correctly and the function is spelled consistently.</p></div></details>
+          <details><summary><span>03</span> Website works locally but not on hosting <b>＋</b></summary><div class="case-body"><p><strong>Possible causes:</strong> File paths, case-sensitive filenames, or deployment configuration differences.</p><p><strong>What I would check:</strong> Compare the serving environment and confirm the hosting setup matches the code.</p></div></details>
+          <details><summary><span>04</span> User cannot log in <b>＋</b></summary><div class="case-body"><p><strong>Possible causes:</strong> Validation errors, incorrect credentials, or an authentication flow problem.</p><p><strong>What I would check:</strong> Inspect input data, form logic, and database records.</p></div></details>
+          <details><summary><span>05</span> Excel results do not look correct <b>＋</b></summary><div class="case-body"><p><strong>Possible causes:</strong> Incorrect formula ranges, duplicate data, or formatting mistakes.</p><p><strong>What I would check:</strong> Review source tables, formulas, and data cleaning steps before finalizing the report.</p></div></details>
         </div>
       </div>
     </section>
 
     <section class="section" id="employability">
       <div class="container two-col">
-        <div><p class="eyebrow">05 / EMPLOYABILITY</p><h2>Ready to learn.<br><span>Ready to contribute.</span></h2></div>
+        <div>
+          <p class="eyebrow">05 / EMPLOYABILITY</p>
+          <h2>Ready to learn.<br><span>Ready to contribute.</span></h2>
+        </div>
         <div class="prose"><p>I aim to communicate clearly, listen to feedback, and work responsibly with a team. I am willing to learn new tools, document my work, and ask questions when required.</p></div>
       </div>
     </section>
@@ -257,13 +171,14 @@
             </div>
             <div class="resume-photo-frame"><img src="image.png" alt="Professional portrait of Irish Rojo Rosario"></div>
           </header>
+
           <div class="resume-body">
             <div class="resume-main-column">
-              <section class="resume-block"><h4><span>01</span> Professional Summary</h4><p>Information Technology student at Datamex College of Saint Adeline with foundational experience from academic projects and ongoing self-directed learning.</p></section>
+              <section class="resume-block"><h4><span>01</span> Professional Summary</h4><p>Information Technology student at Datamex College of Saint Adeline with foundational experience from academic projects and developing technical skills.</p></section>
               <section class="resume-block"><h4><span>02</span> Academic Projects</h4>
-                <div class="resume-item"><div class="resume-item-top"><strong>Datamex Student Portal — Academic Web Project</strong><small>PHP · MySQL · HTML/CSS</small></div><p>Explored a portal concept to improve access to services, announcements, and schedules.</p></div>
-                <div class="resume-item"><div class="resume-item-top"><strong>Salon Booking & Service Management System</strong><small>System Analysis · Web Application Concepts</small></div><p>Drafted a booking and service workflow designed around user experience and operational needs.</p></div>
-                <div class="resume-item"><div class="resume-item-top"><strong>Sweet Bites — Sales Reporting</strong><small>Microsoft Excel · Business Reporting</small></div><p>Organized production and sales data to produce a readable reporting summary.</p></div>
+                <div class="resume-item"><div class="resume-item-top"><strong>Datamex Student Portal — Academic Web Project</strong><small>PHP · MySQL · HTML/CSS</small></div><p>Explored a portal structure focused on student access, organization, and web-based information systems.</p></div>
+                <div class="resume-item"><div class="resume-item-top"><strong>Salon Booking & Service Management System</strong><small>System Analysis · Web Application Concepts</small></div><p>Designed a concept for appointments, service scheduling, and business process flow.</p></div>
+                <div class="resume-item"><div class="resume-item-top"><strong>Sweet Bites — Sales Reporting</strong><small>Microsoft Excel · Business Reporting</small></div><p>Organized production and sales data into a readable report using tables and visuals.</p></div>
               </section>
               <section class="resume-block"><h4><span>03</span> Education</h4>
                 <div class="resume-item"><div class="resume-item-top"><strong>Bachelor of Science in Information Technology</strong><small>2025–2026 · Undergraduate</small></div><p>Datamex College of Saint Adeline</p></div>
@@ -272,98 +187,74 @@
               </section>
             </div>
             <aside class="resume-side-column">
-              <section class="resume-block"><h4><span>04</span> Technical Skills</h4><div class="resume-skill"><strong>Web</strong><p>HTML, CSS, JavaScript fundamentals</p></div><div class="resume-skill"><strong>Backend</strong><p>PHP basics and form handling</p></div><div class="resume-skill"><strong>Database</strong><p>MySQL and SQL basics</p></div><div class="resume-skill"><strong>Tools</strong><p>VS Code, XAMPP, Excel</p></div></section>
-              <section class="resume-block"><h4><span>05</span> Core Strengths</h4><ul class="resume-list-bullets"><li>Willingness to learn</li><li>Problem-solving mindset</li><li>Teamwork and communication</li><li>Adaptability</li></ul></section>
+              <section class="resume-block"><h4><span>04</span> Technical Skills</h4><div class="resume-skill"><strong>Web</strong><p>HTML, CSS, JavaScript fundamentals</p></div><div class="resume-skill"><strong>Backend</strong><p>PHP, form handling, logic flow</p></div><div class="resume-skill"><strong>Database</strong><p>MySQL, database concepts</p></div></section>
+              <section class="resume-block"><h4><span>05</span> Core Strengths</h4><ul class="resume-list-bullets"><li>Willingness to learn</li><li>Problem-solving mindset</li><li>Teamwork and communication</li><li>Responsibility and consistency</li></ul></section>
               <section class="resume-block"><h4><span>06</span> Languages</h4><p>English · Filipino (Tagalog)</p></section>
               <section class="resume-block"><h4><span>07</span> Learning & Certificates</h4><p>Participation in webinars covering cybersecurity, network security, AI, automation, IoT, website publishing, and digital office skills.</p></section>
             </aside>
           </div>
           <footer class="resume-footer"><span>Irish Rojo Rosario</span><span>CURIOUS · PRACTICAL · ALWAYS LEARNING</span></footer>
         </article>
-        <div class="resume-actions"><button class="button primary resume-print" type="button" onclick="window.print()">Print / Save Resume as PDF <span>↗</span></button><a class="button secondary" href="mailto:rosarioirishmay66@gmail.com">Email Me</a></div>
-        <p class="resume-help">This resume is formatted for an entry-level IT applicant. It does not claim paid IT work experience or certifications beyond the participation certificates shown. Carefully review it before application submission.</p>
+
+        <div class="resume-actions"><button class="button primary resume-print" type="button" onclick="window.print()">Print / Save Resume as PDF <span>↗</span></button><a class="button secondary" href="#contact">Request full CV</a></div>
+        <p class="resume-help">This resume is formatted for an entry-level IT applicant. It does not claim paid IT work experience or certifications beyond the participation certificates shown.</p>
       </div>
     </section>
 
-    <!-- MOCK INTERVIEW NAV BUTTON -->
-<a href="#mock-interview" class="nav-link">
-  Mock Interview
-</a>
-<section class="mock-interview-section" id="mock-interview">
-    <div class="container">
+    <section class="mock-interview-section" id="mock-interview">
+      <div class="container">
         <h2 class="section-title">Mock Interview</h2>
-        <p class="section-subtitle">Took a step closer to my dream IT career today through a mock interview session! Grateful for the valuable feedback on my technical presentation, resume, and communication skills. Excited to keep improving and ready to conquer the real thing.</p>
-        
+        <p class="section-subtitle">Took a step closer to my dream IT career today through a mock interview session! Grateful for the valuable feedback on my technical presentation, resume, and communication skills.</p>
         <div class="video-container">
-            <video controls poster="mock-interview.png" class="interview-video">
-                <source src="mock-interview.mp4" type="video/mp4">
-            
-            </video>
+          <video controls poster="mock-interview.png" class="interview-video">
+            <source src="mock-interview.mp4" type="video/mp4">
+          </video>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-
-
-    
     <section class="section" id="certificates">
-      <div class="container"><p class="eyebrow">07 / CERTIFICATES & ACHIEVEMENTS</p><h2>Proof of <span>progress.</span></h2><p class="certificate-intro">Certificates from webinars and learning sessions that reflect my growth in IT fundamentals, digital systems, and emerging technologies.</p>
+      <div class="container">
+        <p class="eyebrow">07 / CERTIFICATES & ACHIEVEMENTS</p>
+        <h2>Proof of <span>progress.</span></h2>
+        <p class="certificate-intro">Certificates from webinars and learning sessions that helped me build practical IT knowledge and improve my communication and confidence.</p>
         <div class="certificate-grid">
-          <button class="certificate-card" type="button" data-certificate="certificate-1.png" aria-label="View certificate: Digital Office Mastery: Essential Skills for Computer & Administrative Staff">
-            <span class="certificate-image-wrap"><img src="certificate-1.png" alt="Certificate of participation: Digital Office Mastery: Essential Skills for Computer & Administrative Staff" loading="lazy"><span class="certificate-zoom">View</span></span>
-            <span class="certificate-title">Iot 101: Your Gateaway to Smart Technology</span><span class="certificate-org">Ethel Programming Computer Programming Services · 2026</span>
-          </button>
-          <button class="certificate-card" type="button" data-certificate="certificate-2.png" aria-label="View certificate: The Future of Network Security, AI, Automation and Zero Trust">
-            <span class="certificate-image-wrap"><img src="certificate-2.png" alt="Certificate of participation: The Future of Network Security, AI, Automation and Zero Trust" loading="lazy"><span class="certificate-zoom">View</span></span>
-            <span class="certificate-title">Windows CMD Warriors: Master the Command Prompt</span><span class="certificate-org">Ethel Programming Computer Programming Services · 2026</span>
-          </button>
-          <button class="certificate-card" type="button" data-certificate="certificate-3.png" aria-label="View certificate: Code, Create, Deploy: A Hands-on Introduction to Building and Publishing Website">
-            <span class="certificate-image-wrap"><img src="certificate-3.png" alt="Certificate of participation: Code, Create, Deploy: A Hands-on Introduction to Building and Publishing Website" loading="lazy"><span class="certificate-zoom">View</span></span>
-            <span class="certificate-title">Next Gen Arduino: Innovation Through Embedded Technology</span><span class="certificate-org">Ethel Programming Computer Programming Services · 2026</span>
-          </button>
-          <button class="certificate-card" type="button" data-certificate="certificate-4.png" aria-label="View certificate: Cyber Frontlines 2026: Outsmarting Modern Cyber Threats">
-            <span class="certificate-image-wrap"><img src="certificate-4.png" alt="Certificate of participation: Cyber Frontlines 2026: Outsmarting Modern Cyber Threats" loading="lazy"><span class="certificate-zoom">View</span></span>
-            <span class="certificate-title">The Future of Network Security,AI, Automation and Zero Trust</span><span class="certificate-org">Ethel Programming Computer Programming Services · 2026</span>
-          </button>
-          <button class="certificate-card" type="button" data-certificate="certificate-5.png" aria-label="View certificate: Building Secure Networks with Cisco Packet Tracer">
-            <span class="certificate-image-wrap"><img src="certificate-5.png" alt="Certificate of participation: Building Secure Networks with Cisco Packet Tracer" loading="lazy"><span class="certificate-zoom">View</span></span>
-            <span class="certificate-title">Digital Office Mastery: Essential Skills for Computer & Administrative Staff</span><span class="certificate-org">Ethel Programming Computer Programming Services · 2026</span>
-          </button>
-          <button class="certificate-card" type="button" data-certificate="certificate-6.png" aria-label="View certificate: Code, Create, Conquer: The Future of Information Technology">
-            <span class="certificate-image-wrap"><img src="certificate-6.png" alt="Certificate of participation: Code, Create, Conquer: The Future of Information Technology" loading="lazy"><span class="certificate-zoom">View</span></span>
-            <span class="certificate-title">Azure Unlocked your Gateaway to Cloud Computing</span><span class="certificate-org">Ethel Programming Computer Programming Services · 2026</span>
-          </button>
-          <button class="certificate-card" type="button" data-certificate="certificate-7.png" aria-label="View certificate: IoT 101: Your Gateway to Smart Technology">
-            <span class="certificate-image-wrap"><img src="certificate-7.png" alt="Certificate of participation: IoT 101: Your Gateway to Smart Technology" loading="lazy"><span class="certificate-zoom">View</span></span>
-            <span class="certificate-title">Ethical Hacking 101: Think Like a Hacker Defend Like a Pro</span><span class="certificate-org">Ethel Programming Computer Programming Services · 2026</span>
-          </button>
-        </div></div>
+          <button class="certificate-card" type="button" data-certificate="certificate-1.png" aria-label="View certificate: Digital Office Mastery: Essential Skills for Computer & Administrative Staff"><span class="certificate-image-wrap"><img src="certificate-1.png" alt="Certificate of participation: Digital Office Mastery: Essential Skills for Computer & Administrative Staff" loading="lazy"><span class="certificate-badges"><span>2026</span></span></span><span class="certificate-title">IoT 101: Your Gateway to Smart Technology</span><span class="certificate-org">Ethel Programming Computer Programming Services · 2026</span></button>
+          <button class="certificate-card" type="button" data-certificate="certificate-2.png" aria-label="View certificate: The Future of Network Security, AI, Automation and Zero Trust"><span class="certificate-image-wrap"><img src="certificate-2.png" alt="Certificate of participation: The Future of Network Security, AI, Automation and Zero Trust" loading="lazy"><span class="certificate-badges"><span>2026</span></span></span><span class="certificate-title">Windows CMD Warriors: Master the Command Prompt</span><span class="certificate-org">Ethel Programming Computer Programming Services · 2026</span></button>
+          <button class="certificate-card" type="button" data-certificate="certificate-3.png" aria-label="View certificate: Code, Create, Deploy: A Hands-on Introduction to Building and Publishing Website"><span class="certificate-image-wrap"><img src="certificate-3.png" alt="Certificate of participation: Code, Create, Deploy: A Hands-on Introduction to Building and Publishing Website" loading="lazy"><span class="certificate-badges"><span>2026</span></span></span><span class="certificate-title">Next Gen Arduino: Innovation Through Embedded Technology</span><span class="certificate-org">Ethel Programming Computer Programming Services · 2026</span></button>
+          <button class="certificate-card" type="button" data-certificate="certificate-4.png" aria-label="View certificate: Cyber Frontlines 2026: Outsmarting Modern Cyber Threats"><span class="certificate-image-wrap"><img src="certificate-4.png" alt="Certificate of participation: Cyber Frontlines 2026: Outsmarting Modern Cyber Threats" loading="lazy"><span class="certificate-badges"><span>2026</span></span></span><span class="certificate-title">The Future of Network Security, AI, Automation and Zero Trust</span><span class="certificate-org">Ethel Programming Computer Programming Services · 2026</span></button>
+          <button class="certificate-card" type="button" data-certificate="certificate-5.png" aria-label="View certificate: Building Secure Networks with Cisco Packet Tracer"><span class="certificate-image-wrap"><img src="certificate-5.png" alt="Certificate of participation: Building Secure Networks with Cisco Packet Tracer" loading="lazy"><span class="certificate-badges"><span>2026</span></span></span><span class="certificate-title">Digital Office Mastery: Essential Skills for Computer & Administrative Staff</span><span class="certificate-org">Ethel Programming Computer Programming Services · 2026</span></button>
+          <button class="certificate-card" type="button" data-certificate="certificate-6.png" aria-label="View certificate: Code, Create, Conquer: The Future of Information Technology"><span class="certificate-image-wrap"><img src="certificate-6.png" alt="Certificate of participation: Code, Create, Conquer: The Future of Information Technology" loading="lazy"><span class="certificate-badges"><span>2026</span></span></span><span class="certificate-title">Azure Unlocked your Gateway to Cloud Computing</span><span class="certificate-org">Ethel Programming Computer Programming Services · 2026</span></button>
+          <button class="certificate-card" type="button" data-certificate="certificate-7.png" aria-label="View certificate: IoT 101: Your Gateway to Smart Technology"><span class="certificate-image-wrap"><img src="certificate-7.png" alt="Certificate of participation: IoT 101: Your Gateway to Smart Technology" loading="lazy"><span class="certificate-badges"><span>2026</span></span></span><span class="certificate-title">Ethical Hacking 101: Think Like a Hacker Defend Like a Pro</span><span class="certificate-org">Ethel Programming Computer Programming Services · 2026</span></button>
+        </div>
+      </div>
     </section>
 
     <section class="section section-muted" id="github">
-      <div class="container github-panel"><div class="github-mark">⌘</div><div><p class="eyebrow">08 / SOURCE CODE</p><h2>Built with learning.<br><span>Shared with evidence.</span></h2><p>GitHub repositories and project references can be added here as evidence of ongoing practice and work.</p></div></div>
+      <div class="container github-panel"><div class="github-mark">⌘</div><div><p class="eyebrow">08 / SOURCE CODE</p><h2>Built with learning.<br><span>Shared with evidence.</span></h2><p>GitHub is where I keep my learning process visible and organized. I use it to save progress, review code, and document the steps behind each project.</p><a class="button secondary" href="https://github.com/rosarioirishmay66-creator" target="_blank" rel="noopener">View GitHub</a></div></div>
     </section>
 
     <section class="section" id="reflection">
-      <div class="container reflection-layout"><div><p class="eyebrow">09 / REFLECTION</p><n>one project at a time.</span></h2></div><div class="prose"><p>My BSIT journey is driven by practice, curiosity, and deliberate learning. Every project improves my understanding of design, logic, and problem-solving.</p></div></div>
+      <div class="container reflection-layout"><div><p class="eyebrow">09 / REFLECTION</p><h2>One project at a time.<br><span>Keeping the momentum.</span></h2></div><div class="prose"><p>My BSIT journey is driven by practice, curiosity, and consistent effort. Every project I work on strengthens my understanding of how technology works in real life, and each lesson reminds me that growth comes from doing the work, not waiting to feel fully ready.</p></div></div>
     </section>
 
     <section class="section section-dark career" id="career">
-      <div class="container"><p class="eyebrow">10 / CAREER DEVELOPMENT PLAN</p><h2>My next <span>milestones.</span></h2><div class="timeline"><div><span>06 MONTHS</span><h3>Build the foundation</h3><p>Strengthen front-end and database fundamentals with practical projects and consistent practice.</p></div><div><span>12 MONTHS</span><h3>Develop applied skills</h3><p>Work on more complete web and system projects while improving debugging and documentation habits.</p></div><div><span>18 MONTHS</span><h3>Prepare for real work</h3><p>Focus on communication, teamwork, and portfolio quality so I can contribute effectively in a professional environment.</p></div></div></div>
+      <div class="container"><p class="eyebrow">10 / CAREER DEVELOPMENT PLAN</p><h2>My next <span>milestones.</span></h2><div class="timeline"><div><span>06 MONTHS</span><h3>Build the foundation</h3><p>Strengthen core web development, backend basics, and data handling through practice and guided projects.</p></div><div><span>12 MONTHS</span><h3>Improve portfolio</h3><p>Refine personal projects, documentation, and deployment examples to better communicate my skills.</p></div><div><span>18 MONTHS</span><h3>Prepare for opportunities</h3><p>Focus on communication, problem-solving, and real-world exposure through internships, freelance work, or collaborative projects.</p></div></div></div>
     </section>
 
     <section class="section contact-section" id="contact">
-      <div class="container contact-box"><p class="eyebrow">11 / CONTACT</p><h2>Let's connect and<br><span>build something useful.</span></h2><p>Interested in collaborating, learning, or discussing opportunities? Reach out and let’s talk.</p></div>
+      <div class="container contact-box"><p class="eyebrow">11 / CONTACT</p><h2>Let's connect and<br><span>build something useful.</span></h2><p>Interested in collaborating, learning, or discussing opportunities? I'd love to connect and exchange ideas.</p><a class="button primary" href="mailto:rosarioirishmay66@gmail.com">Email Me</a></div>
     </section>
   </main>
-  <footer><div class="container footer-row"><a class="brand" href="#home">WS<span>.</span></a><p>Designed as a student portfolio · Irish May Rojo Rosario</p><a href="#home">Back to top ↑</a></div></footer>
+
+  <footer><div class="container footer-row"><a class="brand" href="#home">IMR<span>.</span></a><p>Designed as a student portfolio · Irish May Rojo Rosario</p><a href="#home">Back to top ↑</a></div></footer>
 
   <div class="certificate-lightbox" id="certificateLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Certificate preview">
     <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close certificate preview">×</button>
     <div class="lightbox-content"><img id="lightboxImage" src="" alt="Expanded certificate"></div>
     <p class="lightbox-hint">Click outside the certificate or press Esc to close</p>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
