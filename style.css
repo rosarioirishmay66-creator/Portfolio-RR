@@ -48,3 +48,89 @@ body{background-image:radial-gradient(ellipse at 2% 12%,rgba(185,243,107,.12),tr
 .resume-body{display:grid;grid-template-columns:1.5fr .9fr;gap:0;padding:32px 42px 26px}.resume-main-column{padding-right:30px}.resume-side-column{padding-left:28px;border-left:1px solid #e4eae2}
 .resume-block{margin-bottom:26px}.resume-block h4{display:flex;align-items:center;gap:10px;font-size:.88rem;font-weight:800;letter-spacing:-.2px;margin:0 0 13px;padding-bottom:9px;border-bottom:1px solid #e8ede6}.resume-block h4 span{font-family:'DM Mono',monospace;color:#7fa84c;font-size:.68rem}
 .resume-block p{font-size:.75rem;line-height:1.75;color:#5b665e;margin:0 0 8px}.resume-item{margin-bottom:17px}.resume-item-top{display:flex;flex-direction:column;gap:3px}.resume-
+
+/* LIGHT PINK AESTHETIC THEME */
+
+:root { --ink: #382832; --muted: #8b7581; --paper: #fff9fc; --violet: #f4b6d2; --line: #f0dce6; --dark: #392733;
+
+--green: #f7c5dc; --electric: #f2a9cb; --deep: #392733; --gold: #e9b6c9; }
+
+/* Background */ body { background-color: #fff9fc; background-image: radial-gradient(ellipse at 2% 12%, rgba(255,182,213,.16), transparent 28%), radial-gradient(ellipse at 100% 54%, rgba(248,205,225,.2), transparent 24%); color: #382832; }
+
+/* Header */ .site-header { background: rgba(255,249,252,.94); border-bottom-color: #f0dce6; }
+
+.brand span, h1 span, h2 span { color: #df8fb4; }
+
+/* Hero */ .hero { background: radial-gradient( ellipse at 85% 38%, #ffe5f0 0, transparent 42% ); }
+
+.eyebrow { color: #c77c9e; }
+
+.status-dot { background: #e99abb; }
+
+.primary { background: #f5c1d8; color: #49303c; }
+
+.secondary { border-color: #efd5e1; }
+
+/* Decorative elements */ .orb-one { background: #ffe2ef; }
+
+.orb-two { background: #f6bfd8; }
+
+.code-card b { color: #f4a9cc; }
+
+.floating-tag { border-color: #f0dce6; }
+
+/* Stats */ .quick-stats { background: #fff; border-color: #f0dce6; }
+
+/* Skills */ .section-muted { background: #fff0f6; }
+
+.skill-icon { background: #ffe3ef; color: #c8759c; }
+
+.skill-level span { background: #e99cbd; }
+
+.skill-card { border-color: #f0dce6; }
+
+/* Projects */ .project-card { border-color: #f0dce6; }
+
+.project-type { color: #c77c9e; }
+
+.visual-portal { background: #fce5ef; }
+
+.visual-salon { background: #f9e8e9; }
+
+.visual-sales { background: #f4e8f2; }
+
+/* Dark sections */ .section-dark { background: #392733; }
+
+.section-dark .eyebrow { color: #f2b5d0; }
+
+.section-dark h2 span { color: #f4b6d2; }
+
+.cases summary span, .cases summary b { color: #f4b6d2; }
+
+/* Resume */ .resume-section, .contact-section { background: linear-gradient(145deg, #fff0f6, #fff9fc, #fce8f1); }
+
+.resume-document { border-color: #f0dce6; }
+
+.resume-document:before { background: linear-gradient(90deg, #9f5978, #edabc9, #f5d2df, #9f5978); }
+
+.resume-kicker, .resume-block h4 span { color: #c77c9e; }
+
+.resume-identity h3 span { color: #d98bad; }
+
+.resume-photo-frame { background: linear-gradient(145deg, #e99cbd, #f5d2df); }
+
+/* Certificates */ .certificate-card { border-color: #f0dce6; }
+
+.certificate-card:hover, .certificate-card:focus-visible { border-color: #e99cbd; }
+
+.certificate-intro { color: #8b7581; }
+
+/* Links and buttons */ .nav-links a:hover, .text-link:hover { color: #d47fa5; }
+
+.nav-cta { background: #392733; }
+
+.contact-links a { border-color: #f0dce6; }
+
+/* Footer */ footer { border-color: #f0dce6; background: #fff; }
+
+/* Selection */ { background: #f7c5dc; color: #392733; }
